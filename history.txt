@@ -1,0 +1,391 @@
+cd /root/Desktop/host
+git init
+git config --global user.name nathanpark
+git config --global user.email nathanpark@ucsb.edu
+git remote add origin https://github.com/NathanPark111/problem1
+git push -u origin main
+git checkout -b main
+git add .
+git commit -m "new commit"
+git init
+git config --global user.name nathanpark
+git config --global user.email nathanpark@ucsb.edu
+git remote add origin https://github.com/NathanPark111/problem1
+git remote -v
+mkdir -p ~/Desktop/p1_basic_unix/{src/{graphic,exe,utilities},test/{basic,composite},cache/{metadata,data/{tables,directory_list},images,history}}
+find ~/Desktop/p1_basic_unix
+whoamI
+whoami
+pwd
+mkdir -p /root/Desktop/p1_basic_unix/{src/{graphic,exe,utilities},test/{basic,composite},cache/{metadata,data/{tables,directory_list},images,history}}
+find /root/Desktop/p1_basic_unix
+push -u origin main
+git push -u origin main
+git init
+cd /root/Desktop/p1_basic_unix
+git add .
+git init
+git add .
+git add .
+git commit -m "Add directory tree structure"
+git remote add origin https://github.com/NathanPark111/problem1
+git push -u origin master
+git push -u origin p1_basic_unix
+git push -u origin main
+find /root/Desktop/p1_basic_unix
+git branch
+ls -a
+git add .
+git status
+ls -R /root/Desktop/p1_basic_unix
+cd /root/Desktop/p1_basic_unix/test/basic
+touch "test 1.txt" "test 2.txt" "test 3.txt"
+ls
+touch "test_1.txt" "test_2.txt" "test_3.txt"
+ls
+rm "test 1.txt"
+rm "test 2.txt"
+rm "test 3.txt"
+ls
+echo "Nathan Park - 2025 January 1" >> test/basic/test_1.txt
+cd /root/Desktop/p1_basic_unix
+echo "Nathan Park - 2025 January 1" >> test/basic/test_1.txt
+cat test/basic/test_1.txt
+ls -l test/basic/test_1.txt > test/basic/test_2.txt
+cat test/basic/test_2.txt
+chmod +x test/basic/test_1.txt
+ls -l test/basic/test_1.txt >> test/basic/test_2.txt
+cat test/basic/test_2.txt
+git add .
+git commit -m "Made test_1.txt executable and appended ls -l output to test_2.txt"
+git push origin master
+cd /root/Desktop/p1_basic_unix
+wget https://zhwangs.github.io/UCSB-comp-phys/data/problem_set/P1_B.tar.gz
+sha256sum "P1 B.tar.gz"
+sha256sum "P1_B.tar.gz"
+tar -xzvf "P1_B.tar.gz" 
+ls -R /root/Desktop/p1_basic_unix
+mv ../P1_B/example.sh .
+mv ../P1_B/example.sh
+mv "../P1_B/example.sh" .
+pwd
+ls ../P1_B
+mv .../P1_B/example.sh .
+mv root/Desktop/p1_basic_unix/P1_B/example.sh .
+ls ../
+ls ../P1_B
+mv P1_B/example.sh .
+ls
+ls P1_B
+cd /root/Desktop/p1_basic_unix
+mv P1_B/example_1.txt P1_B/demo_1.txt
+ls P1_B
+mv P1_B/example1.txt P1_B/demo_1.txt
+mv P1_B/example2.txt P1_B/demo_2.txt
+ls P1_B
+mv P1_B/demo_1.txt src/exe/
+mv P1_B/demo_2.txt cache/data/tables/
+ls P1_B
+rm -r P1_B
+lm
+ls
+find . -name demo_1.txt
+ln -s src/exe/demo_1.txt demo_link
+ls -l
+alias ll='ls -l'
+ll
+grep "statistics" src/exe/demo_1.txt | tee src/utilities/grep_stat_demo1.txt
+ls src/utilities/
+cat src/utilities/grep_stat_demo1.txt
+grep -r "statistics" . | tee cache/images/grep_stat_all.txt
+ls cache/images/
+find . -type f -name "*.txt" > test/basic/test_3.txt
+cat test/basic/test_3.txt
+find . -type f -name "*.txt" -exec grep -H "statistics" {} +
+tar -czvf p1_basic_unix.tar.gz /root/Desktop/p1_basic_unix
+sha256sum p1_basic_unix.tar.gz
+mkdir /root/Desktop/Archive_P1
+cd /root/Desktop/Archive_P1
+git init
+cp /root/Desktop/p1_basic_unix.tar.gz .
+ls /root/Desktop/
+ls /root/Desktop/p1_basic_unix
+cp /root/Desktop/p1_basic_unix/p1_basic_unix.tar.gz .
+ls
+git init
+git add p1_basic_unix.tar.gz
+git commit -m "Adding file"
+git remote add origin https://github.com/NathanPark111/problem1
+git push -u origin main
+git branch
+git push -u origin master
+git pull origin master --rebase
+git rebase --continue
+git push -u origin master
+cd /root/Desktop
+git clone https://github.com/NathanPark111/P2
+cd P_2
+cd P2
+rm -f /Problem_1/*
+ls /Problem_1
+ls
+rm -f /Problem1/*
+ls
+ls Problem1
+alias file_remove='function _file_remove() {
+if [ -z "$1" ]; then
+echo "Error: No directory specified."
+echo "Usage: file_remove <directory_name>"
+return 1
+fi
+}; _file_remove'" >> ~/.bashrc
+
+if [ -z "$1" ]; then echo "Error: No directory specified."; fi; }'"
+echo "alias file_remove='function _file_remove() {
+    if [ -z \"\$1\" ]; then
+        echo \"Error: No directory specified.\"
+        echo \"Usage: file_remove <directory_name>\"
+        return 1
+    fi
+    if [ -d \"\$1\" ]; then
+        echo \"Deleting all files in directory: \$1\"
+        rm -f \"\$1\"/*
+        echo \"All files in \$1 have been deleted.\"
+    else
+        echo \"Error: \$1 is not a valid directory.\"
+    fi
+}; _file_remove'" >> ~/.bashrc
+source ~/.bashrc
+cd /electron_scattering_data
+cd /root/Desktop/P2/Problem1/electron_scattering_data
+mkdir -p odd even
+ls
+for file in *; do     if [ -f "$file" ]; then         index=$(echo "$file" | grep -oE '[0-9]+')         if [ $((index % 2)) -eq 0 ]; then             mv "$file" even/;         else             mv "$file" odd/;         fi;     fi; done
+ls
+for file in *; do     if [ -f "$file" ]; then         index=$(echo "$file" | grep -oE '[0-9]+' | tail -n 1)         if (( index % 2 == 0 )); then             mv "$file" even/;         else             mv "$file" odd/;         fi;     fi; done
+ls
+ls even
+ls odd
+git branch
+git add .
+git commit -m "divided into even and odd"
+git push origin main
+file_remove /Problem1
+cd /root/Desktop/P2
+file_remove /Problem1
+cd /root/Desktop/P2
+cd /root/Desktop
+mkdir -p /Problem_3
+cd /root/Desktop/Problem_3
+ls /Problem_3
+cd /Problem_3
+rm -rf /Problem_3
+cd /root/Desktop
+ls
+mkdir -p /root/Desktop/Problem_3
+cd /root/Desktop/Problem_3
+output_file="/Problem_3/conversion_result.txt"
+ls
+decimal_to_binary() {     number=$1;     binary="";     while [ $number -gt 0 ]; do         remainder=$(( number % 2 ));         binary="$remainder$binary";         number=$(( number / 2 ));     done; }
+decimal_to_hexadecimal() {     number=$1;     hex="";     hex_map=(0 1 2 3 4 5 6 7 8 9 A B C D E F);     while [ $number -gt 0 ]; do         remainder=$(( number % 16 ));         hex="${hex_map[remainder]}$hex";         number=$(( number / 16 ));     done; }
+read decimal_number
+    echo "Error: Decimal numbers bigger than 100000 detected!" | tee "$output_file"
+    exit 1
+pwd
+cd /root/Desktop
+ls
+history
+cd /root/Desktop/Problem_3
+ls
+decimal_to_binary() {     number=$1;     binary="";     while [ $number -gt 0 ]; do         remainder=$(( number % 2 ));         binary="$remainder$binary";         number=$(( number / 2 ));     done; }
+decimal_to_hexadecimal() {     number=$1;     hex="";     hex_map=(0 1 2 3 4 5 6 7 8 9 A B C D E F);     while [ $number -gt 0 ]; do         remainder=$(( number % 16 ));         hex="${hex_map[remainder]}$hex";         number=$(( number / 16 ));     done; }
+read decimal_number
+    echo "Error: Decimal bigger than 100000 detected!" | tee "$output_file"
+    exit 1
+cd /root/Desktop/Problem_3
+output_file="/Problem_3/conversion_result.txt"
+decimal_to_binary() {     number=$1;     binary="";     while [ "$number" -gt 0 ]; do         remainder=$(( number % 2 ));         binary="$remainder$binary";         number=$(( number / 2 ));     done;     echo "$binary"; }
+decimal_to_hexadecimal() {     number=$1;     hex="";     hex_map=(0 1 2 3 4 5 6 7 8 9 A B C D E F);     while [ "$number" -gt 0 ]; do         remainder=$(( number % 16 ));         hex="${hex_map[remainder]}$hex";         number=$(( number / 16 ));     done;     echo "$hex"; }
+ 
+echo "Enter a decimal number (less than 100000):"
+read -r decimal_number
+lid decimal number." | tee "$output_file"
+    exit 1
+fi
+
+if [[ "$decimal_number" -ge 100000 ]]; then
+    echo "Error: Only decimal numbers less than 100000 are allowed!" | tee "$output_file"
+    exit 1
+fi
+
+ 
+binary_result=$(decimal_to_binary "$decimal_number")
+hexadecimal_result=$(decimal_to_hexadecimal "$decimal_number")
+
+ 
+echo "Decimal: $decimal_number" > "$output_file"
+echo "Binary: $binary_result" >> "$output_file"
+echo "Hexadecimal: $hexadecimal_result" >> "$output_file"
+
+echo "Conversion results saved to $output_file."
+output_file="/Problem_3/conversion_result.txt"
+decimal_to_binary() {     number=$1;     binary="";     while [ "$number" -gt 0 ]; do         remainder=$(( number % 2 ));         binary="$remainder$binary";         number=$(( number / 2 ));     done;     echo "$binary"; }
+decimal_to_hexadecimal() {     number=$1;     hex="";     hex_map=(0 1 2 3 4 5 6 7 8 9 A B C D E F);     while [ "$number" -gt 0 ]; do         remainder=$(( number % 16 ));         hex="${hex_map[remainder]}$hex";         number=$(( number / 16 ));     done;     echo "$hex"; }
+echo "Enter a decimal number (less than 100000):"
+read -r decimal_number
+if ! [[ "$decimal_number" =~ ^[0-9]+$ ]]; then     echo "Error: Input is not a valid decimal number." | tee "$output_file";     exit 1; fi
+cd /root/Desktop/Problem_3
+nano conversion.sh
+cat <<EOF > conversion.sh
+output_file="/Problem_3/conversion_result.txt"
+
+decimal_to_binary() {
+    number=\$1
+    binary=""
+    while [ "\$number" -gt 0 ]; do
+        remainder=\$(( number % 2 ))
+        binary="\$remainder\$binary"
+        number=\$(( number / 2 ))
+    done
+    echo "\$binary"
+}
+
+decimal_to_hexadecimal() {
+    number=\$1
+    hex=""
+    hex_map=(0 1 2 3 4 5 6 7 8 9 A B C D E F)
+    while [ "\$number" -gt 0 ]; do
+        remainder=\$(( number % 16 ))
+        hex="\${hex_map[remainder]}\$hex"
+        number=\$(( number / 16 ))
+    done
+    echo "\$hex"
+}
+
+echo "Enter a decimal number (less than 100000):"
+read -r decimal_number
+
+if ! [[ "\$decimal_number" =~ ^[0-9]+$ ]]; then
+    echo "Error: Input is not a valid decimal number." | tee "\$output_file"
+    exit 1
+fi
+
+if [[ "\$decimal_number" -ge 100000 ]]; then
+    echo "Error: Only decimal numbers less than 100000 are allowed!" | tee "\$output_file"
+    exit 1
+fi
+
+binary_result=\$(decimal_to_binary "\$decimal_number")
+hexadecimal_result=\$(decimal_to_hexadecimal "\$decimal_number")
+
+echo "Decimal: \$decimal_number" > "\$output_file"
+echo "Binary: \$binary_result" >> "\$output_file"
+echo "Hexadecimal: \$hexadecimal_result" >> "\$output_file"
+
+echo "Conversion results saved to \$output_file."
+EOF
+
+chmod +x conversion.sh
+./conversion.sh
+rm conversion.sh
+ls
+cat <<EOF > conversion.sh
+output_file="/root/Desktop/Problem_3/conversion_result.txt"
+
+decimal_to_binary() {
+    number=\$1
+    binary=""
+    while [ "\$number" -gt 0 ]; do
+        remainder=\$(( number % 2 ))
+        binary="\$remainder\$binary"
+        number=\$(( number / 2 ))
+    done
+    echo "\$binary"
+}
+
+decimal_to_hexadecimal() {
+    number=\$1
+    hex=""
+    hex_map=(0 1 2 3 4 5 6 7 8 9 A B C D E F)
+    while [ "\$number" -gt 0 ]; do
+        remainder=\$(( number % 16 ))
+        hex="\${hex_map[remainder]}\$hex"
+        number=\$(( number / 16 ))
+    done
+    echo "\$hex"
+}
+
+echo "Enter a decimal number (less than 100000):"
+read -r decimal_number
+
+if ! [[ "\$decimal_number" =~ ^[0-9]+$ ]]; then
+    echo "Error: Input is not a valid decimal number." | tee "\$output_file"
+    exit 1
+fi
+
+if [[ "\$decimal_number" -ge 100000 ]]; then
+    echo "Error: Only decimal numbers less than 100000 are allowed!" | tee "\$output_file"
+    exit 1
+fi
+
+binary_result=\$(decimal_to_binary "\$decimal_number")
+hexadecimal_result=\$(decimal_to_hexadecimal "\$decimal_number")
+
+echo "Decimal: \$decimal_number" > "\$output_file"
+echo "Binary: \$binary_result" >> "\$output_file"
+echo "Hexadecimal: \$hexadecimal_result" >> "\$output_file"
+
+echo "Conversion results saved to \$output_file."
+EOF
+
+chmod +x conversion.sh
+./conversion.sh
+cat conversion.sh
+cat output_file
+cat conversion_results
+cat conversion_results.txt
+cat /root/Desktop/Problem_3/conversion_result.txt
+history
+./conversion.sh
+./conversion.sh
+./conversion.sh
+./conversion.sh
+./conversion.sh
+./conversion.sh
+cat /root/Desktop/Problem_3/conversion_result.txt
+git init
+git add conversion.sh conversion_result.txt
+git commit -m "Adding codes"
+git add .
+git commit -m "Adding Problem_3 entirely"
+git remote add origin https://github.com/NathanPark111/problem1
+git push -u origin main
+git log
+git push -u origin master
+git pull origin master --rebase
+git push -u origin master
+git checkout -b feature_branch
+echo "hello world!" > README.md
+git add README.md
+git commit -m "Added hello world to readme"
+git push -u origin feature_branch
+git checkout main
+git checkout master
+git merge feature_branch
+git push origin main
+git push origin master
+git pull origin master
+cat README.md
+cd /root/Desktop
+history > history.txt
+cat history.txt
+history
+rm history.txt
+cat ~/.bash_history
+cat ~/.bash_history > history.txt
+cat history.txt
+git checkout -b master
+git checkout -b main
+git checkout main
+git checkout master
+history -a
